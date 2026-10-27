@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f8eee6">
+<title>Diyorbek ♡ Dilfuza | Taklifnoma</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fff8f1;--paper:#fffaf5;--ink:#49352b;--muted:#8a7568;--gold:#b48643;--gold2:#e0bd82;--rose:#d9a79b;--line:#ead7c5;--green:#526c59}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:20px}
+body{margin:0;color:var(--ink);font-family:Manrope,Arial,sans-serif;background:var(--cream);overflow-x:hidden}
+button,a{-webkit-tap-highlight-color:transparent}button{font:inherit}
+.top-controls{position:fixed;top:12px;left:12px;right:12px;z-index:20;display:flex;justify-content:space-between;align-items:center;pointer-events:none}
+.top-controls>*{pointer-events:auto}
+.music,.lang{border:1px solid #ffffffa8;background:#fffaf0e8;color:var(--ink);box-shadow:0 5px 20px #553a201c;backdrop-filter:blur(12px)}
+.music{display:flex;gap:9px;align-items:center;border-radius:40px;padding:9px 14px 9px 9px;cursor:pointer;font-size:11px}
+.music-icon{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#d4ad6b,#9a6c2e);color:white;font-size:17px}
+.music.playing .music-icon{animation:pulse 1.8s infinite}
+.lang{display:flex;padding:4px;border-radius:30px}.lang button{border:0;background:transparent;color:var(--muted);padding:8px 12px;border-radius:22px;font-size:11px;cursor:pointer}.lang button.active{background:#b48643;color:#fff}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 #b4864350}50%{box-shadow:0 0 0 7px #b4864300}}
+.hero{min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:76px 18px 36px;position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 50% 40%,#fffdf9 0,#faeee3 46%,#e7d0b6 100%)}
+.hero:before{content:"";position:absolute;inset:0;z-index:-2;opacity:.55;background:linear-gradient(180deg,#fff9f1a8,#fff3e7b8),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cg fill='none' stroke='%23b48643' stroke-opacity='.22'%3E%3Cpath d='M0 90Q45 10 90 90T180 90M90 0Q10 45 90 90T90 180'/%3E%3Ccircle cx='90' cy='90' r='50'/%3E%3C/g%3E%3C/svg%3E")}
+.hero:after{content:"";position:absolute;inset:15px;z-index:-1;border:1px solid #b486435c;pointer-events:none}
+.hero-inner{width:min(100%,560px);position:relative;padding:34px 8px 22px}
+.eyebrow,.kicker{font-size:9px;letter-spacing:3.2px;text-transform:uppercase;color:#9b713c}
+.ornament{font-family:"Cormorant Garamond",serif;color:var(--gold);font-size:25px;margin:14px 0}
+.names{font-family:"Great Vibes",cursive;font-size:clamp(60px,17vw,100px);line-height:.91;font-weight:400;color:#95672f;margin:20px 0 24px;text-shadow:0 2px #fff8}
+.names .and{display:block;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:.55em;line-height:1.1;color:#c59a5b}
+.hero-note{max-width:340px;margin:0 auto;color:#765d4d;font-family:"Cormorant Garamond",serif;font-size:20px;line-height:1.45}
+.hero-date{margin:27px auto 0;display:inline-flex;align-items:center;gap:14px;padding:12px 20px;border-top:1px solid #b486436e;border-bottom:1px solid #b486436e;font-family:"Cormorant Garamond",serif;font-size:20px}
+.open-invite{display:block;margin:26px auto 0;border:1px solid #ad7d3f;border-radius:3px;padding:14px 20px;color:white;background:linear-gradient(135deg,#c69b59,#94652d);font-size:10px;letter-spacing:1.7px;cursor:pointer;box-shadow:0 9px 22px #8f672a26}
+.scroll-hint{font-size:9px;letter-spacing:2px;color:#967d68;margin-top:23px}
+.petal{position:absolute;top:-30px;color:#dca99d;opacity:.65;animation:fall linear infinite;pointer-events:none}
+@keyframes fall{to{transform:translate3d(45px,110vh,0) rotate(380deg);opacity:.05}}
+main{max-width:760px;margin:auto;padding:0 16px}
+.section{padding:66px 0;text-align:center}
+.kicker{margin-bottom:12px}
+h2{font-family:"Cormorant Garamond",serif;font-size:clamp(33px,8vw,47px);font-weight:500;line-height:1.08;margin:0 0 17px;color:#674a35}
+.lead{max-width:520px;margin:0 auto;color:var(--muted);font-family:"Cormorant Garamond",serif;font-size:20px;line-height:1.55}
+.divider{display:flex;align-items:center;gap:12px;justify-content:center;color:var(--gold);margin:24px auto}.divider:before,.divider:after{content:"";width:52px;height:1px;background:#c29a60}
+.date-card{max-width:480px;margin:28px auto 0;padding:27px 18px 25px;border:1px solid #d9bd96;border-radius:160px 160px 8px 8px;background:linear-gradient(160deg,#fffdf9,#f5e4d5);box-shadow:0 16px 36px #704c2410}
+.date-top{font-size:9px;letter-spacing:3px;color:#9a774e;text-transform:uppercase}
+.date-number{font-family:"Cormorant Garamond",serif;font-size:86px;line-height:1;color:#b48643;margin:8px 0 0}
+.date-month{font-family:"Cormorant Garamond",serif;font-size:27px}
+.date-year{font-size:10px;letter-spacing:3px;color:var(--muted);margin-top:5px}
+.date-time{margin-top:20px;padding-top:16px;border-top:1px solid #e6d1b8;font-family:"Cormorant Garamond",serif;font-size:27px}
+.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;max-width:480px;margin:25px auto 0}
+.countdown div{background:#f1e3d5;border:1px solid #ead5bd;padding:12px 2px;border-radius:7px}
+.countdown strong{display:block;font-family:"Cormorant Garamond",serif;font-size:28px;font-weight:500;color:#8e632e}
+.countdown span{font-size:8px;letter-spacing:.7px;text-transform:uppercase;color:#927d6b}
+.venue-section{padding:55px 0;text-align:center}
+.venue-card{border:1px solid #dfc5a4;background:#fffaf4;padding:26px 16px 18px;box-shadow:0 14px 35px #7b4e2110;border-radius:5px}
+.venue-title{font-family:"Cormorant Garamond",serif;font-size:34px;color:#745238;margin:6px 0}
+.venue-address{font-size:12px;line-height:1.8;color:var(--muted);margin:8px 0 20px}
+.map-frame{width:100%;height:270px;border:0;border-radius:7px;background:#eee3d7;display:block}
+.map-actions{display:flex;gap:8px;margin-top:12px}
+.map-btn{display:block;flex:1;text-align:center;text-decoration:none;border-radius:4px;background:linear-gradient(135deg,#c69b59,#94652d);color:white;padding:14px 8px;font-size:10px;letter-spacing:.5px}
+.map-btn.secondary{background:#f0e4d7;border:1px solid #dfc5a4;color:#6c5037}
+.message-card{padding:34px 19px;background:linear-gradient(145deg,#f7e9dc,#fff9f3);border:1px solid #e7cfb3;position:relative}
+.message-card:before,.message-card:after{content:"❧";position:absolute;color:#c6a06b;font-size:28px}.message-card:before{top:7px;left:12px}.message-card:after{bottom:7px;right:12px}
+.message-card h2{font-size:35px}
+.message-card .lead{font-size:21px}
+.signature{font-family:"Great Vibes",cursive;color:#9b6b32;font-size:clamp(43px,11vw,62px);line-height:1.1;margin:24px 0 10px}
+.family{font-family:"Cormorant Garamond",serif;font-size:25px;color:#6d5038}
+.footer{text-align:center;padding:43px 18px 35px;background:#ead8c5}
+.footer .signature{font-size:52px;margin:8px 0}
+.footer p{font-family:"Cormorant Garamond",serif;font-size:19px;line-height:1.45;color:#755d4a}
+.footer .date-small{font-size:9px;letter-spacing:3px;color:#9a784f;margin-top:23px}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}
+@media(min-width:650px){.section{padding:85px 0}.venue-section{padding:70px 0}.venue-card{padding:34px}.map-frame{height:340px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="top-controls">
+  <button class="music" id="musicBtn" aria-label="Musiqani yoqish"><span class="music-icon" id="musicIcon">♫</span><span id="musicLabel">Musiqani yoqish</span></button>
+  <div class="lang"><button id="uzBtn" class="active" onclick="setLang('uz')">UZ</button><button id="ruBtn" onclick="setLang('ru')">RU</button></div>
+</div>
+<section class="hero" id="top">
+  <span class="petal" style="left:8%;animation-duration:13s;font-size:18px">✿</span><span class="petal" style="left:82%;animation-duration:17s;animation-delay:-5s;font-size:14px">❀</span><span class="petal" style="left:65%;animation-duration:19s;animation-delay:-8s;font-size:17px">✿</span>
+  <div class="hero-inner">
+    <div class="eyebrow" data-uz="Hayotimizning eng go‘zal sahifasiga guvoh bo‘ling" data-ru="Станьте частью самой прекрасной страницы нашей жизни">Hayotimizning eng go‘zal sahifasiga guvoh bo‘ling</div>
+    <div class="ornament">— ♡ —</div>
+    <div class="names">Diyorbek <span class="and">&</span> Dilfuza</div>
+    <div class="divider">♡</div>
+    <p class="hero-note" data-uz="Ikki qalb, bir niyat, bir umrga tutashgan ikki taqdir…" data-ru="Два сердца, одно желание, две судьбы, соединённые на всю жизнь…">Ikki qalb, bir niyat, bir umrga tutashgan ikki taqdir…</p>
+    <div class="hero-date"><span>06</span><span>✧</span><span data-uz="Noyabr, 2026" data-ru="Ноября 2026">Noyabr, 2026</span><span>✧</span><span>18:00</span></div>
+    <button class="open-invite" onclick="document.getElementById('invitation').scrollIntoView({behavior:'smooth'})" data-uz="TAKLIFNOMANI OCHISH ↓" data-ru="ОТКРЫТЬ ПРИГЛАШЕНИЕ ↓">TAKLIFNOMANI OCHISH ↓</button>
+    <div class="scroll-hint" data-uz="DAVOM ETISH UCHUN PASTGA SURING" data-ru="ПРОКРУТИТЕ ВНИЗ">DAVOM ETISH UCHUN PASTGA SURING</div>
+  </div>
+</section>
+<main id="invitation">
+<section class="section reveal">
+  <div class="kicker" data-uz="Yuraklarimizdagi quvonch" data-ru="Радость наших сердец">Yuraklarimizdagi quvonch</div>
+  <h2 data-uz="Bu kun — bizning hikoyamiz boshlanishi" data-ru="Этот день — начало нашей истории">Bu kun — bizning hikoyamiz boshlanishi</h2>
+  <p class="lead" data-uz="Mehr va muhabbat bilan boshlangan yo‘limizning eng unutilmas kunida siz azizlarimizni yonimizda ko‘rish biz uchun katta baxtdir." data-ru="В самый памятный день нашего пути, начатого с любви и нежности, видеть рядом дорогих нам людей — большое счастье.">Mehr va muhabbat bilan boshlangan yo‘limizning eng unutilmas kunida siz azizlarimizni yonimizda ko‘rish biz uchun katta baxtdir.</p>
+  <div class="divider">❦</div>
+  <div class="date-card">
+    <div class="date-top" data-uz="To‘y tantanasi" data-ru="Свадебное торжество">To‘y tantanasi</div>
+    <div class="date-number">06</div><div class="date-month" data-uz="Noyabr" data-ru="Ноября">Noyabr</div>
+    <div class="date-year">2026</div><div class="date-time">18:00</div>
+  </div>
+  <div class="kicker" style="margin-top:31px" data-uz="Quvonchli uchrashuvgacha" data-ru="До нашей встречи осталось">Quvonchli uchrashuvgacha</div>
+  <div class="countdown">
+    <div><strong id="days">--</strong><span data-uz="Kun" data-ru="Дней">Kun</span></div><div><strong id="hours">--</strong><span data-uz="Soat" data-ru="Часов">Soat</span></div><div><strong id="mins">--</strong><span data-uz="Daqiqa" data-ru="Минут">Daqiqa</span></div><div><strong id="secs">--</strong><span data-uz="Soniya" data-ru="Секунд">Soniya</span></div>
+  </div>
+</section>
+<section class="venue-section reveal">
+  <div class="venue-card">
+    <div class="kicker" data-uz="Manzilimiz" data-ru="Наш адрес">Manzilimiz</div>
+    <h2 data-uz="Yo‘lingiz biz tomon bo‘lsin" data-ru="Пусть ваш путь ведёт к нам">Yo‘lingiz biz tomon bo‘lsin</h2>
+    <div class="venue-title">Osiyo to‘yxonasi</div>
+    <p class="venue-address" data-uz="Buxoro viloyati, Vobkent tumani, Charmgaron MFY<br>6-noyabr · soat 18:00" data-ru="Бухарская область, Вабкентский район, махалля Чармгарон<br>6 ноября · 18:00">Buxoro viloyati, Vobkent tumani, Charmgaron MFY<br>6-noyabr · soat 18:00</p>
+    <iframe class="map-frame" title="Osiyo to‘yxonasi xaritasi" loading="lazy" allowfullscreen src="https://yandex.uz/map-widget/v1/?ll=64.526353%2C40.018759&z=16&pt=64.526353%2C40.018759%2Cpm2rdm"></iframe>
+    <div class="map-actions">
+      <a class="map-btn" href="https://yandex.uz/maps/org/osiyo_to_yxonasi/135472710652/?ll=64.526353%2C40.018759&z=16" target="_blank" rel="noopener" data-uz="XARITANI KATTA OCHISH ↗" data-ru="ОТКРЫТЬ КАРТУ ↗">XARITANI KATTA OCHISH ↗</a>
+      <a class="map-btn secondary" href="https://yandex.uz/maps/?rtext=~40.018759,64.526353&rtt=auto" target="_blank" rel="noopener" data-uz="YO‘LNI KO‘RISH ↗" data-ru="ПОСТРОИТЬ МАРШРУТ ↗">YO‘LNI KO‘RISH ↗</a>
+    </div>
+  </div>
+</section>
+<section class="section reveal">
+  <div class="message-card">
+    <div class="ornament">♡</div>
+    <h2 data-uz="Aziz va qadrli mehmonlar!" data-ru="Дорогие и любимые гости!">Aziz va qadrli mehmonlar!</h2>
+    <p class="lead" data-uz="Baxtning eng go‘zal lahzalari yaqinlar bilan baham ko‘rilganda yanada qadrli bo‘ladi. Yangi hayot sari qo‘yayotgan ilk qadamlarimizda duolaringiz, samimiy tilaklaringiz va tashrifingiz bilan bizga hamroh bo‘ling. Sizning borligingiz shodiyonamizga fayz, qalbimizga quvonch bag‘ishlaydi." data-ru="Самые прекрасные мгновения счастья становятся ещё дороже, когда ими делишься с близкими. Разделите с нами первый шаг в новую жизнь — подарите нам свои добрые пожелания, молитвы и присутствие. Ваше участие наполнит наш праздник теплом и радостью.">Baxtning eng go‘zal lahzalari yaqinlar bilan baham ko‘rilganda yanada qadrli bo‘ladi. Yangi hayot sari qo‘yayotgan ilk qadamlarimizda duolaringiz, samimiy tilaklaringiz va tashrifingiz bilan bizga hamroh bo‘ling. Sizning borligingiz shodiyonamizga fayz, qalbimizga quvonch bag‘ishlaydi.</p>
+    <div class="divider">❦</div>
+    <div class="signature">Diyorbek & Dilfuza</div>
+    <div class="family" data-uz="Mo‘minovlar oilasi" data-ru="Семья Мўминовых">Mo‘minovlar oilasi</div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="ornament">❦ ♡ ❦</div>
+  <div class="signature">Diyorbek & Dilfuza</div>
+  <p data-uz="Sizni intiqlik bilan kutamiz.<br>Birgalikdagi quvonchli kunimizda ko‘rishguncha!" data-ru="Будем с нетерпением ждать вас.<br>До встречи в наш счастливый день!">Sizni intiqlik bilan kutamiz.<br>Birgalikdagi quvonchli kunimizda ko‘rishguncha!</p>
+  <div class="date-small">06 · 11 · 2026 &nbsp; | &nbsp; 18:00</div>
+</footer>
+<script>
+function setLang(lang){
+ document.documentElement.lang=lang;
+ document.querySelectorAll('[data-'+lang+']').forEach(el=>el.innerHTML=el.getAttribute('data-'+lang));
+ document.getElementById('uzBtn').classList.toggle('active',lang==='uz');
+ document.getElementById('ruBtn').classList.toggle('active',lang==='ru');
+ document.getElementById('musicLabel').textContent=lang==='uz'?(playing?'Musiqa yangramoqda':'Musiqani yoqish'):(playing?'Музыка играет':'Включить музыку');
+}
+const target=new Date('2026-11-06T18:00:00+05:00').getTime();
+function tick(){let d=target-Date.now();if(d<0)d=0;const v={days:Math.floor(d/86400000),hours:Math.floor(d%86400000/3600000),mins:Math.floor(d%3600000/60000),secs:Math.floor(d%60000/1000)};Object.keys(v).forEach(k=>document.getElementById(k).textContent=String(v[k]).padStart(2,'0'))}
+tick();setInterval(tick,1000);
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}}),{threshold:.1});document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+let playing=false,ctx=null,loopTimer=null,step=0;
+const notes=[261.63,329.63,392,523.25,392,329.63,293.66,349.23,440,587.33,440,349.23,261.63,329.63,392,493.88,440,392,329.63,293.66];
+function playNote(freq,when,duration,volume,type='sine'){const o=ctx.createOscillator(),g=ctx.createGain();o.type=type;o.frequency.setValueAtTime(freq,when);g.gain.setValueAtTime(.0001,when);g.gain.exponentialRampToValueAtTime(volume,when+.04);g.gain.exponentialRampToValueAtTime(.0001,when+duration);o.connect(g);g.connect(ctx.destination);o.start(when);o.stop(when+duration+.03)}
+function melody(){if(!playing||!ctx)return;const now=ctx.currentTime;playNote(notes[step%notes.length],now,.85,.07,'sine');if(step%2===0)playNote(notes[step%notes.length]/2,now,.95,.025,'triangle');if(step%4===0)playNote(notes[(step+4)%notes.length]*1.5,now+.04,.55,.014,'sine');step++;loopTimer=setTimeout(melody,620)}
+document.getElementById('musicBtn').addEventListener('click',async()=>{const lang=document.documentElement.lang||'uz';if(!playing){try{ctx=ctx||new(window.AudioContext||window.webkitAudioContext)();await ctx.resume();playing=true;document.getElementById('musicBtn').classList.add('playing');document.getElementById('musicIcon').textContent='♫';document.getElementById('musicLabel').textContent=lang==='uz'?'Musiqa yangramoqda':'Музыка играет';melody()}catch(e){document.getElementById('musicLabel').textContent=lang==='uz'?'Audio ishga tushmadi':'Не удалось включить звук'}}else{playing=false;clearTimeout(loopTimer);if(ctx)ctx.suspend();document.getElementById('musicBtn').classList.remove('playing');document.getElementById('musicLabel').textContent=lang==='uz'?'Musiqani yoqish':'Включить музыку'}});
+</script>
+</body></html>
